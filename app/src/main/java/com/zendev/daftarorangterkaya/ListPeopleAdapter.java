@@ -41,7 +41,7 @@ public class ListPeopleAdapter extends RecyclerView.Adapter<ListPeopleAdapter.My
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, int position) {
         myViewHolder.tvName.setText(getListPeople().get(position).getName());
-        myViewHolder.tvDeskripsi.setText(getListPeople().get(position).getDeskripsi());
+        myViewHolder.tvFounder.setText(getListPeople().get(position).getFounder());
 
         Glide.with(context)
                 .load(getListPeople().get(position).getPhoto())
@@ -57,13 +57,13 @@ public class ListPeopleAdapter extends RecyclerView.Adapter<ListPeopleAdapter.My
     public class MyViewHolder extends RecyclerView.ViewHolder {
 
         TextView tvName;
-        TextView tvDeskripsi;
+        TextView tvFounder;
         ImageView imgPhoto;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             tvName = itemView.findViewById(R.id.tv_item_name);
-            tvDeskripsi = itemView.findViewById(R.id.tv_item_deskripsi);
+            tvFounder = itemView.findViewById(R.id.tv_item_founder);
             imgPhoto = itemView.findViewById(R.id.img_item_photo);
         }
     }

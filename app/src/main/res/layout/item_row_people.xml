@@ -31,7 +31,7 @@
             android:textSize="16sp"
             android:layout_marginBottom="8dp"/>
         <TextView
-            android:id="@+id/tv_item_deskripsi"
+            android:id="@+id/tv_item_founder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:text="@string/example_description"/>
