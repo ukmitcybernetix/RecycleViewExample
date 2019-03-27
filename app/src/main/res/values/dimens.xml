@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_splash_layout">140dp</dimen>
+    <dimen name="layout_margin_top">12dp</dimen>
+    <dimen name="font_size">25sp</dimen>
+</resources>
