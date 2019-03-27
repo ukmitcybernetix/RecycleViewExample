@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,8 +43,6 @@ public class ListPeopleAdapter extends RecyclerView.Adapter<ListPeopleAdapter.My
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, final int position) {
 
-        final People people = listPeople.get(position);
-
         myViewHolder.tvName.setText(getListPeople().get(position).getName());
         myViewHolder.tvFounder.setText(getListPeople().get(position).getFounder());
 
@@ -57,7 +54,7 @@ public class ListPeopleAdapter extends RecyclerView.Adapter<ListPeopleAdapter.My
         myViewHolder.parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Kamu Memilih " + people.getName(), Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "Kamu Memilih " + getListPeople().get(position).getName(), Toast.LENGTH_LONG).show();
             }
         });
     }
