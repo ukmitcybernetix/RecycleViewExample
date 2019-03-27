@@ -1,4 +1,5 @@
 <resources>
-    <string name="app_name">DaftarOrangTerkaya</string>
+    <string name="app_name">Orang Terkaya</string>
     <string name="daftar_orang_terkaya">Daftar Orang Terkaya</string>
+    <string name="example_description">Pendiri Microsoft</string>
 </resources>
