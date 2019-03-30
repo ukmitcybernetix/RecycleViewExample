@@ -5,4 +5,6 @@
     <dimen name="font_size">25sp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="horizontal_margin_detail">8dp</dimen>
+    <dimen name="ukuran_judul">29sp</dimen>
 </resources>

@@ -1,6 +1,7 @@
 package com.zendev.daftarorangterkaya;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -55,6 +56,11 @@ public class ListPeopleAdapter extends RecyclerView.Adapter<ListPeopleAdapter.My
             @Override
             public void onClick(View view) {
                 Toast.makeText(context, "Kamu Memilih " + getListPeople().get(position).getName(), Toast.LENGTH_LONG).show();
+                Intent moveDetail = new Intent(context, ViewPeople.class);
+                moveDetail.putExtra(ViewPeople.EXTRA_IMG, getListPeople().get(position).getPhoto());
+                moveDetail.putExtra(ViewPeople.EXTRA_PEOPLE, getListPeople().get(position).getName());
+                moveDetail.putExtra(ViewPeople.EXTRA_DESKRIPSI, getListPeople().get(position).getDeskripsi());
+                context.startActivity(moveDetail);
             }
         });
     }

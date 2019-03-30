@@ -2,4 +2,7 @@
     <string name="app_name">Orang Terkaya</string>
     <string name="daftar_orang_terkaya">Daftar Orang Terkaya</string>
     <string name="example_description">Pendiri Microsoft</string>
+    <string name="people_image">People Image</string>
+    <string name="people_example">Bill Gates</string>
+    <string name="ini_adalah_deskripsi">Ini Adalah Deskripsi</string>
 </resources>
